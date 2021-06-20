@@ -80,7 +80,7 @@ export default function Dashboard() {
                               <span className="sr-only">Open user menu</span>
                               <img
                                 className="h-8 w-8 rounded-full"
-                                src={user?.avatar_url}
+                                src="https://github.com/sutolix.png"
                                 alt=""
                               />
                             </Menu.Button>
@@ -174,8 +174,8 @@ export default function Dashboard() {
                     />
                   </div>
                   <div className="ml-3">
-                    <div className="text-base font-medium leading-none text-white">Diego Fernandes</div>
-                    <div className="text-sm font-medium leading-none text-gray-400">diego@rocketseat.com.br</div>
+                    <div className="text-base font-medium leading-none text-white">Sutolix</div>
+                    <div className="text-sm font-medium leading-none text-gray-400">suto@hookod.com.br</div>
                   </div>
                   <button className="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                     <span className="sr-only">View notifications</span>

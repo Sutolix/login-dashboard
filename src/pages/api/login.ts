@@ -19,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       const user = await UserModel.findOne({email, password})
   
       if(!user) {
-        return res.send(401)
+        return res.status(401).send('Unauthorized')
       }
   
       const token = jwt.sign({userID: user.id})
@@ -30,6 +30,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       res.status(err)
     }
   } else {
-    res.status(200).json({ method: 'Another' })
+    res.status(404).send('Invalid method')
   }
 }
